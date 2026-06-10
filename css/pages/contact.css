@@ -1,0 +1,548 @@
+/* =========================================================
+   CONTACT PAGE
+========================================================= */
+
+.contact-page{
+    background:#f5f7fb;
+
+    padding:
+    18px 12px
+    42px;
+}
+
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.contact-container{
+    max-width:1120px;
+    margin:auto;
+}
+
+
+
+/* =========================================================
+   ARTICLE
+========================================================= */
+
+.contact-article{
+    background:#ffffff;
+
+    border:
+    1px solid #e7ebf2;
+
+    border-radius:18px;
+
+    padding:
+    34px 42px
+    42px;
+
+    box-shadow:
+    0 6px 24px rgba(15,23,42,.03);
+}
+
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.contact-hero{
+    display:grid;
+
+    grid-template-columns:
+    minmax(0,1fr)
+    280px;
+
+    gap:20px;
+
+    align-items:start;
+
+    padding-bottom:24px;
+
+    border-bottom:
+    1px solid #edf1f6;
+}
+
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.contact-label{
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:
+    9px 14px;
+
+    background:#eef2ff;
+
+    border-radius:999px;
+
+    font-size:11px;
+    font-weight:700;
+
+    letter-spacing:.12em;
+
+    color:#4361ee;
+
+    margin-bottom:14px;
+}
+
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.contact-hero-content h1{
+    font-family:Poppins,sans-serif;
+
+    font-size:52px;
+    font-weight:800;
+
+    line-height:1.02;
+
+    letter-spacing:-2px;
+
+    color:#07153a;
+
+    max-width:640px;
+
+    margin-bottom:18px;
+}
+
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.contact-intro{
+    font-size:15px;
+
+    line-height:2;
+
+    color:#4b5b73;
+
+    max-width:760px;
+}
+
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.contact-hero-image{
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:flex-start;
+}
+
+
+
+.contact-hero-image img{
+    width:250px;
+
+    max-width:100%;
+
+    height:auto;
+
+    object-fit:contain;
+
+    display:block;
+}
+
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.contact-section{
+    padding-top:28px;
+}
+
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.contact-section h2{
+    font-family:Poppins,sans-serif;
+
+    font-size:32px;
+    font-weight:800;
+
+    line-height:1.15;
+
+    letter-spacing:-1px;
+
+    color:#07153a;
+
+    margin-bottom:14px;
+}
+
+
+
+/* =========================================================
+   PARAGRAPHS
+========================================================= */
+
+.contact-section p{
+    font-size:15px;
+
+    line-height:1.95;
+
+    color:#4a596f;
+
+    margin-bottom:14px;
+}
+
+
+
+/* =========================================================
+   INFO ROWS
+========================================================= */
+
+.contact-simple-info{
+    margin-top:18px;
+}
+
+
+
+.contact-info-row{
+    display:grid;
+
+    grid-template-columns:
+    220px
+    minmax(0,1fr);
+
+    gap:18px;
+
+    padding:
+    16px 0;
+
+    border-bottom:
+    1px solid #edf1f5;
+}
+
+
+
+.contact-info-row:first-child{
+    border-top:
+    1px solid #edf1f5;
+}
+
+
+
+/* =========================================================
+   INFO TITLES
+========================================================= */
+
+.contact-info-title{
+    font-family:Poppins,sans-serif;
+
+    font-size:21px;
+    font-weight:700;
+
+    line-height:1.35;
+
+    color:#07153a;
+}
+
+
+
+/* =========================================================
+   INFO TEXT
+========================================================= */
+
+.contact-info-text{
+    font-size:15px;
+
+    line-height:1.9;
+
+    color:#4b5b72;
+}
+
+
+
+.contact-info-text a{
+    color:#3156e6;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    word-break:break-word;
+}
+
+
+
+.contact-info-text a:hover{
+    text-decoration:underline;
+}
+
+
+
+/* =========================================================
+   HIGHLIGHT BOX
+========================================================= */
+
+.contact-highlight-box{
+    margin-top:18px;
+
+    padding:
+    20px 22px;
+
+    background:#fafcff;
+
+    border:
+    1px solid #e3e9f2;
+
+    border-radius:14px;
+}
+
+
+
+.contact-highlight-box h3{
+    font-family:Poppins,sans-serif;
+
+    font-size:21px;
+    font-weight:700;
+
+    color:#07153a;
+
+    margin-bottom:10px;
+}
+
+
+
+.contact-highlight-box p{
+    margin-bottom:10px;
+}
+
+
+
+.contact-highlight-box p:last-child{
+    margin-bottom:0;
+}
+
+
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+.contact-social-links{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:16px;
+}
+
+
+
+.contact-social-links a{
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:
+    10px 18px;
+
+    background:#ffffff;
+
+    border:
+    1px solid #dce4ef;
+
+    border-radius:999px;
+
+    color:#07153a;
+
+    text-decoration:none;
+
+    font-size:14px;
+    font-weight:600;
+
+    transition:
+    background .2s ease,
+    border-color .2s ease;
+}
+
+
+
+.contact-social-links a:hover{
+    background:#eef2ff;
+
+    border-color:#cbd6ff;
+}
+
+
+
+/* =========================================================
+   LAST SECTION
+========================================================= */
+
+.contact-last-section{
+    padding-bottom:0;
+}
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:980px){
+
+    .contact-hero{
+        grid-template-columns:1fr;
+    }
+
+    .contact-hero-image{
+        justify-content:flex-start;
+    }
+
+    .contact-hero-image img{
+        width:200px;
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+    .contact-page{
+        padding:
+        12px 8px
+        36px;
+    }
+
+    .contact-article{
+        padding:
+        24px 18px
+        30px;
+
+        border-radius:14px;
+    }
+
+    .contact-label{
+        margin-bottom:12px;
+    }
+
+    .contact-hero{
+        gap:14px;
+
+        padding-bottom:18px;
+    }
+
+    .contact-hero-content h1{
+        font-size:38px;
+
+        line-height:1.04;
+
+        letter-spacing:-1.4px;
+
+        margin-bottom:14px;
+    }
+
+    .contact-intro{
+        font-size:14px;
+
+        line-height:1.85;
+    }
+
+    .contact-section{
+        padding-top:22px;
+    }
+
+    .contact-section h2{
+        font-size:26px;
+
+        margin-bottom:10px;
+    }
+
+    .contact-section p,
+    .contact-info-text{
+        font-size:14px;
+
+        line-height:1.85;
+    }
+
+    .contact-info-row{
+        grid-template-columns:1fr;
+
+        gap:6px;
+
+        padding:
+        14px 0;
+    }
+
+    .contact-info-title{
+        font-size:18px;
+    }
+
+    .contact-highlight-box{
+        padding:
+        16px 16px;
+    }
+
+    .contact-highlight-box h3{
+        font-size:18px;
+    }
+
+    .contact-social-links{
+        gap:8px;
+    }
+
+    .contact-social-links a{
+        width:100%;
+    }
+
+    .contact-hero-image img{
+        width:170px;
+    }
+
+}
+
+
+
+@media(max-width:520px){
+
+    .contact-hero-content h1{
+        font-size:31px;
+
+        letter-spacing:-1px;
+    }
+
+    .contact-section h2{
+        font-size:23px;
+    }
+
+    .contact-info-title{
+        font-size:17px;
+    }
+
+    .contact-hero-image img{
+        width:150px;
+    }
+
+}

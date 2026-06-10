@@ -1,0 +1,319 @@
+/* =========================================================
+   REPORT ISSUE PAGE
+========================================================= */
+
+.issue-page{
+    background:#f8fafc;
+
+    padding:
+    40px 16px
+    65px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.issue-container{
+    max-width:940px;
+    margin:auto;
+}
+
+
+/* =========================================================
+   ARTICLE
+========================================================= */
+
+.issue-article{
+    background:#ffffff;
+
+    border:
+    1px solid #e5e7eb;
+
+    padding:
+    50px 55px
+    60px;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.issue-article h1{
+    font-family:Poppins,sans-serif;
+
+    font-size:38px;
+    font-weight:700;
+
+    line-height:1.2;
+
+    color:#1e3a8a;
+
+    margin-bottom:24px;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.issue-intro{
+    font-size:16px;
+    line-height:1.9;
+
+    color:#475569;
+
+    margin-bottom:18px;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.issue-section{
+    margin-top:46px;
+}
+
+
+/* =========================================================
+   SECTION TITLES
+========================================================= */
+
+.issue-section h2{
+    font-family:Poppins,sans-serif;
+
+    font-size:28px;
+    font-weight:700;
+
+    line-height:1.3;
+
+    color:#1e3a8a;
+
+    margin-bottom:16px;
+}
+
+
+/* =========================================================
+   PARAGRAPHS
+========================================================= */
+
+.issue-section p{
+    font-size:15px;
+    line-height:1.9;
+
+    color:#475569;
+
+    margin-bottom:18px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.issue-form{
+    margin-top:26px;
+}
+
+
+/* FORM GROUP */
+
+.form-group{
+    margin-bottom:24px;
+}
+
+
+/* LABEL */
+
+.form-group label{
+    display:block;
+
+    font-size:14px;
+    font-weight:600;
+
+    color:#1e293b;
+
+    margin-bottom:10px;
+}
+
+
+/* INPUTS */
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+
+    padding:
+    14px 16px;
+
+    border:
+    1px solid #dbe2ea;
+
+    background:#ffffff;
+
+    font-size:15px;
+
+    color:#334155;
+
+    font-family:Inter,sans-serif;
+
+    outline:none;
+
+    transition:.2s ease;
+}
+
+
+/* TEXTAREA */
+
+.form-group textarea{
+    resize:vertical;
+    min-height:180px;
+}
+
+
+/* FOCUS */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#2563eb;
+}
+
+
+/* FILE */
+
+.form-group input[type="file"]{
+    padding:12px;
+}
+
+
+/* BUTTON */
+
+.issue-form button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:
+    14px 26px;
+
+    background:#2563eb;
+
+    border:none;
+
+    color:#ffffff;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.2s ease;
+}
+
+.issue-form button:hover{
+    background:#1d4ed8;
+}
+
+
+/* =========================================================
+   LISTS
+========================================================= */
+
+.issue-list{
+    padding-left:22px;
+
+    margin-top:12px;
+}
+
+.issue-list li{
+    font-size:15px;
+    line-height:1.9;
+
+    color:#475569;
+
+    margin-bottom:8px;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.issue-section a{
+    color:#2563eb;
+
+    text-decoration:none;
+
+    border-bottom:
+    1px solid rgba(37,99,235,.25);
+
+    transition:.2s ease;
+}
+
+.issue-section a:hover{
+    color:#1d4ed8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:768px){
+
+    .issue-article{
+        padding:
+        38px 26px
+        45px;
+    }
+
+    .issue-article h1{
+        font-size:31px;
+    }
+
+    .issue-section h2{
+        font-size:24px;
+    }
+
+    .issue-intro{
+        font-size:15px;
+    }
+
+    .issue-section p,
+    .issue-list li,
+    .form-group input,
+    .form-group select,
+    .form-group textarea{
+        font-size:14px;
+    }
+
+}
+
+@media(max-width:580px){
+
+    .issue-page{
+        padding:
+        22px 10px
+        45px;
+    }
+
+    .issue-article{
+        padding:
+        30px 18px
+        36px;
+    }
+
+    .issue-article h1{
+        font-size:26px;
+    }
+
+    .issue-section h2{
+        font-size:21px;
+    }
+
+}

@@ -1,0 +1,294 @@
+/* =========================================================
+   ABOUT PAGE
+========================================================= */
+
+.about-page{
+    background:#f8fafc;
+
+    padding:
+    40px 16px
+    65px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.about-container{
+    max-width:940px;
+    margin:auto;
+}
+
+
+/* =========================================================
+   ARTICLE
+========================================================= */
+
+.about-article{
+    background:#ffffff;
+
+    border:
+    1px solid #e5e7eb;
+
+    padding:
+    50px 55px
+    60px;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.about-article h1{
+    font-family:Poppins,sans-serif;
+
+    font-size:38px;
+    font-weight:700;
+
+    line-height:1.2;
+
+    color:#1e3a8a;
+
+    margin-bottom:24px;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.about-intro{
+    font-size:16px;
+    line-height:1.9;
+
+    color:#475569;
+
+    margin-bottom:42px;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.about-section{
+    margin-bottom:46px;
+}
+
+
+/* =========================================================
+   SECTION TITLES
+========================================================= */
+
+.about-section h2{
+    font-family:Poppins,sans-serif;
+
+    font-size:28px;
+    font-weight:700;
+
+    line-height:1.3;
+
+    color:#1e3a8a;
+
+    margin-bottom:16px;
+}
+
+
+/* =========================================================
+   PARAGRAPHS
+========================================================= */
+
+.about-section p{
+    font-size:15px;
+    line-height:1.9;
+
+    color:#475569;
+
+    margin-bottom:18px;
+}
+
+
+/* =========================================================
+   LISTS
+========================================================= */
+
+.about-list{
+    padding-left:22px;
+
+    margin-top:12px;
+}
+
+.about-list li{
+    font-size:15px;
+    line-height:1.9;
+
+    color:#475569;
+
+    margin-bottom:8px;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.about-section a{
+    color:#2563eb;
+
+    text-decoration:none;
+
+    border-bottom:
+    1px solid rgba(37,99,235,.25);
+
+    transition:.2s ease;
+}
+
+.about-section a:hover{
+    color:#1d4ed8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:768px){
+
+    .about-article{
+        padding:
+        38px 26px
+        45px;
+    }
+
+    .about-article h1{
+        font-size:31px;
+    }
+
+    .about-section h2{
+        font-size:24px;
+    }
+
+    .about-intro{
+        font-size:15px;
+    }
+
+    .about-section p,
+    .about-list li{
+        font-size:14px;
+    }
+
+}
+
+@media(max-width:580px){
+
+    .about-page{
+        padding:
+        22px 10px
+        45px;
+    }
+
+    .about-article{
+        padding:
+        30px 18px
+        36px;
+    }
+
+    .about-article h1{
+        font-size:26px;
+    }
+
+    .about-section h2{
+        font-size:21px;
+    }
+
+}
+
+
+/* SKIP LINK */
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    background: #111;
+    color: #fff;
+    padding: 10px 16px;
+    z-index: 9999;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 20px;
+}
+
+
+
+/* ABOUT NOTE */
+
+.about-note {
+    margin-top: 24px;
+    padding: 22px;
+    border-left: 4px solid #4f46e5;
+    background: rgba(79, 70, 229, 0.08);
+    border-radius: 10px;
+}
+
+
+
+/* ABOUT LINKS */
+
+.about-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.about-links a {
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+
+
+/* BETTER CONTENT SPACING */
+
+.about-section {
+    margin-bottom: 60px;
+}
+
+.about-section h2 {
+    margin-bottom: 18px;
+}
+
+.about-list li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+
+
+/* MOBILE IMPROVEMENTS */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        margin-bottom: 48px;
+    }
+
+    .about-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-links a {
+        width: 100%;
+    }
+
+}

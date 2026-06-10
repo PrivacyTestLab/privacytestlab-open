@@ -1,0 +1,250 @@
+/* ================= RESET =================*/
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+/* ================= PAGE ================= */
+.ip-page{
+max-width:950px;
+margin:2px auto 8px;
+padding:0 10px;
+margin-top: 0;
+}
+
+
+/* TITLE */
+
+.data-title{
+    font-size:28px;
+    font-weight:800;
+    margin-bottom:20px;
+    color:#111827;
+    line-height:1.25;
+    letter-spacing:-0.5px;
+    margin-top:0;
+    justify-content: center;
+    text-align: center;
+}
+/* TABLET */
+
+@media(max-width:1024px){
+
+    .data-title{
+        font-size:34px;
+    }
+
+}
+
+
+.loading-cell{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    min-height:42px;
+}
+
+.lottie-loader{
+    width:22px;
+    height:22px;
+    flex-shrink:0;
+}
+
+/* TABLE WRAPPER */
+.ip-table-wrapper {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow-x: auto;
+}
+/* TABLE CONTAINER */
+.ip-table {
+    width: 90%;             /* Responsive width */
+    max-width: 700px;       /* Keeps it from getting too wide on large screens */
+    margin: 0 auto;         /* Centers the table on desktop */
+    border-collapse: collapse;
+    table-layout: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER & CELLS - Combined shared styles */
+.ip-table th, 
+.ip-table td {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: left;
+}
+
+/* HEADER SPECIFIC */
+.ip-table th {
+    background: #efefef;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+/* FIELD COLUMN (Label) */
+.ip-table td:first-child, 
+.ip-table th:first-child {
+    font-weight: 500;
+    color: #444;
+    white-space: nowrap;    /* Prevents label wrapping */
+    padding-right: 40px;    /* Controlled gap */
+    width: auto;            /* Shrinks to content */
+}
+
+/* VALUE COLUMN */
+.ip-table td:last-child, 
+.ip-table th:last-child {
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ROW STYLING */
+.ip-table tbody tr {
+    background: #f7f7f7;
+}
+
+.ip-table tbody tr:hover {
+    background: #ececec;
+}
+
+/* IP HIGHLIGHT */
+.highlight {
+    font-weight: 600;
+    color: #000;
+}
+
+
+/* ================= MEDIUM DEVICES / TABLETS ================= */
+@media(max-width:900px){
+
+  .ip-intro{
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+
+  .ip-intro-image{
+    order:-1;
+    text-align:center;
+  }
+
+  .ip-intro-image img{
+    max-width:320px;
+  }
+
+  .ip-table{
+    table-layout:fixed; /* Set to fixed to ensure percentage allocations work correctly */
+  }
+
+  /* Optimize layout split for medium viewports */
+  .ip-table th:first-child,
+  .ip-table td:first-child{
+    width: 28%;
+    white-space: normal; /* Allows long labels to wrap dynamically */
+    padding-right: 8px;  /* Shrinks the desktop 40px gap down */
+  }
+
+  .ip-table th:last-child,
+  .ip-table td:last-child{
+    width: 72%;
+  }
+
+  .ip-table th,
+  .ip-table td{
+    padding:12px 10px;
+    font-size:14px;
+  }
+
+} 
+
+
+
+
+
+
+
+
+
+
+/* ================= MOBILE OVERFLOW FIX ================= */
+
+html,
+body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+/* prevent containers from exceeding screen */
+.ip-page,
+.ip-table-wrapper,
+.faq-section{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+/* table responsive wrapper */
+.ip-table-wrapper{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+/* proper table sizing */
+.ip-table{
+    width:100%;
+    min-width:0;
+    table-layout:fixed;
+}
+
+/* prevent long text overflow */
+.ip-table td,
+.ip-table th{
+    word-break:normal;
+    overflow-wrap:break-word;
+    white-space:normal;
+}
+
+/* ================= MOBILE DEVICES ================= */
+@media(max-width:768px){
+
+    /* Reduce main page padding to use more width */
+    .ip-page{
+        padding: 0 4px; /* Reduced from 12px to 4px */
+    }
+
+    .ip-table th,
+    .ip-table td{
+        padding: 10px 6px; /* Optimized vertical and horizontal padding balance */
+        font-size: 13px;
+    }
+
+    /* FIX: Clear desktop styles on first column to let it shrink to 25% */
+    .ip-table th:first-child,
+    .ip-table td:first-child{
+        width: 25% !important; 
+        white-space: normal !important; /* Forces field labels to break to new lines if needed */
+        padding-right: 4px !important;  /* Overrides desktop 40px padding */
+    }
+
+    /* FIX: Give the value column a dominant 75% width profile */
+    .ip-table th:last-child,
+    .ip-table td:last-child{
+        width: 75% !important;
+    }
+
+    /* FIX: Forces flex layout container elements to utilize 100% of the newly granted space */
+    .loading-cell span {
+        flex: 1;
+        min-width: 0;
+    }
+
+    /* Keep your existing FAQ styles below... */
+    .data-title{
+        font-size: 22px; /* Slightly smaller to prevent title wrapping */
+        padding: 0 8px;
+    }
+    
+}

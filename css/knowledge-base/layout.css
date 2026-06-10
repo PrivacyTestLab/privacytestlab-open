@@ -1,0 +1,564 @@
+/* =========================================================
+   KNOWLEDGE BASE LAYOUT
+========================================================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+background:#f8fafc;
+color:#1e293b;
+line-height:1.75;
+}
+
+/* =========================================================
+   MAIN WRAPPER
+========================================================= */
+
+.kb-wrapper{
+max-width:1600px;
+margin:0 auto;
+padding:28px 22px 80px;
+}
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.kb-breadcrumb{
+font-size:13px;
+color:#64748b;
+margin-bottom:24px;
+}
+
+.kb-breadcrumb a{
+color:#64748b;
+text-decoration:none;
+transition:.2s ease;
+}
+
+.kb-breadcrumb a:hover{
+color:#2563eb;
+}
+
+.kb-breadcrumb span{
+margin:0 8px;
+color:#94a3b8;
+}
+
+/* =========================================================
+   GRID LAYOUT
+========================================================= */
+
+.kb-grid{
+display:grid;
+grid-template-columns:280px minmax(0,760px) 260px;
+gap:38px;
+align-items:start;
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   ARTICLE AREA
+========================================================= */
+
+.kb-article{
+background:#ffffff;
+border:1px solid #e5e7eb;
+border-radius:18px;
+padding:42px 46px;
+}
+
+/* =========================================================
+   ARTICLE TYPOGRAPHY
+========================================================= */
+
+.kb-article h1{
+font-family:Poppins,sans-serif;
+font-size:46px;
+line-height:1.15;
+font-weight:700;
+color:#0f172a;
+margin-bottom:28px;
+letter-spacing:-1px;
+}
+
+.kb-article h2{
+font-family:Poppins,sans-serif;
+font-size:30px;
+line-height:1.3;
+font-weight:700;
+color:#0f172a;
+margin-top:54px;
+margin-bottom:20px;
+}
+
+.kb-article h3{
+font-size:22px;
+line-height:1.45;
+font-weight:700;
+color:#111827;
+margin-top:38px;
+margin-bottom:14px;
+}
+
+.kb-article p{
+font-size:16px;
+line-height:1.95;
+color:#374151;
+margin-bottom:18px;
+}
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.kb-article a{
+color:#2563eb;
+text-decoration:none;
+border-bottom:1px solid rgba(37,99,235,.25);
+transition:.2s ease;
+}
+
+.kb-article a:hover{
+color:#1d4ed8;
+border-bottom-color:#1d4ed8;
+}
+
+/* =========================================================
+   HIGHLIGHT TEXT
+========================================================= */
+
+.kb-highlight{
+background:#fef08a;
+padding:2px 4px;
+border-radius:4px;
+}
+
+/* =========================================================
+   STRONG TEXT
+========================================================= */
+
+.kb-article strong{
+font-weight:700;
+color:#111827;
+}
+
+/* =========================================================
+   LISTS
+========================================================= */
+
+.kb-article ul,
+.kb-article ol{
+padding-left:24px;
+margin-bottom:22px;
+}
+
+.kb-article li{
+margin-bottom:10px;
+font-size:16px;
+color:#374151;
+line-height:1.85;
+}
+
+/* =========================================================
+   QUOTE BLOCK
+========================================================= */
+
+.kb-quote{
+background:#fffbea;
+border-left:4px solid #eab308;
+padding:16px 18px;
+margin:26px 0;
+border-radius:10px;
+}
+
+.kb-quote p{
+margin:0;
+font-size:15px;
+line-height:1.85;
+}
+
+/* =========================================================
+   INFO BOX
+========================================================= */
+
+.kb-info{
+background:#eff6ff;
+border:1px solid #bfdbfe;
+padding:18px 20px;
+border-radius:12px;
+margin:28px 0;
+}
+
+.kb-info p{
+margin:0;
+font-size:15px;
+}
+
+/* =========================================================
+   WARNING BOX
+========================================================= */
+
+.kb-warning{
+background:#fef2f2;
+border:1px solid #fecaca;
+padding:18px 20px;
+border-radius:12px;
+margin:28px 0;
+}
+
+.kb-warning p{
+margin:0;
+font-size:15px;
+}
+
+/* =========================================================
+   ADSENSE BLOCK
+========================================================= */
+
+.kb-ad{
+margin:38px 0;
+padding:28px;
+
+border:1px dashed #cbd5e1;
+border-radius:14px;
+
+background:#f8fafc;
+
+text-align:center;
+
+font-size:13px;
+font-weight:600;
+letter-spacing:.5px;
+text-transform:uppercase;
+
+color:#94a3b8;
+}
+
+/* =========================================================
+   RIGHT TOC
+========================================================= */
+
+.kb-toc{
+position:sticky;
+top:24px;
+}
+
+.kb-toc-box{
+background:#ffffff;
+border:1px solid #e5e7eb;
+border-radius:16px;
+padding:22px 22px;
+}
+
+.kb-toc h4{
+font-size:16px;
+font-weight:700;
+color:#111827;
+margin-bottom:18px;
+}
+
+.kb-toc ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.kb-toc li{
+margin-bottom:12px;
+}
+
+.kb-toc a{
+font-size:14px;
+line-height:1.55;
+color:#475569;
+text-decoration:none;
+transition:.2s ease;
+}
+
+.kb-toc a:hover{
+color:#2563eb;
+}
+
+/* =========================================================
+   FAQ SECTION
+========================================================= */
+
+.kb-faq{
+margin-top:60px;
+padding-top:30px;
+border-top:1px solid #e5e7eb;
+}
+
+.kb-faq-item{
+margin-bottom:26px;
+}
+
+.kb-faq-item h3{
+font-size:19px;
+margin-bottom:10px;
+}
+
+/* =========================================================
+   RELATED ARTICLES
+========================================================= */
+
+.kb-related{
+margin-top:70px;
+padding-top:34px;
+border-top:1px solid #e5e7eb;
+}
+
+.kb-related-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:22px;
+}
+
+.kb-related-card{
+background:#f8fafc;
+border:1px solid #e5e7eb;
+border-radius:14px;
+padding:18px;
+transition:.2s ease;
+}
+
+.kb-related-card:hover{
+border-color:#bfdbfe;
+background:#eff6ff;
+}
+
+.kb-related-card h4{
+font-size:16px;
+line-height:1.5;
+margin-bottom:8px;
+}
+
+.kb-related-card p{
+font-size:14px;
+line-height:1.7;
+margin-bottom:0;
+}
+
+/* =========================================================
+   TABLES
+========================================================= */
+
+.kb-table-wrapper{
+overflow-x:auto;
+margin:28px 0;
+}
+
+.kb-table{
+width:100%;
+border-collapse:collapse;
+font-size:15px;
+}
+
+.kb-table th{
+background:#f1f5f9;
+color:#111827;
+font-weight:700;
+padding:14px;
+text-align:left;
+border:1px solid #e5e7eb;
+}
+
+.kb-table td{
+padding:14px;
+border:1px solid #e5e7eb;
+color:#374151;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1350px){
+
+.kb-grid{
+grid-template-columns:250px minmax(0,1fr);
+}
+
+.kb-toc{
+display:none;
+}
+
+}
+
+@media(max-width:1000px){
+
+.kb-grid{
+grid-template-columns:1fr;
+}
+
+
+
+.kb-article{
+padding:34px 26px;
+}
+
+}
+
+@media(max-width:768px){
+
+.kb-wrapper{
+padding:20px 14px 60px;
+}
+
+.kb-article h1{
+font-size:34px;
+}
+
+.kb-article h2{
+font-size:25px;
+}
+
+.kb-article h3{
+font-size:20px;
+}
+
+.kb-article{
+padding:28px 20px;
+border-radius:14px;
+}
+
+.kb-related-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+
+/* =========================================================
+   KNOWLEDGE BASE INDEX PAGE
+========================================================= */
+
+/* intro spacing */
+
+.kb-article > p{
+max-width:760px;
+}
+
+/* section spacing */
+
+.kb-article h2{
+padding-top:10px;
+border-top:1px solid #f1f5f9;
+}
+
+/* article lists */
+
+.kb-article ul{
+margin-top:12px;
+margin-bottom:30px;
+}
+
+.kb-article li{
+margin-bottom:12px;
+}
+
+/* related cards */
+
+.kb-related-card{
+text-decoration:none;
+display:block;
+}
+
+.kb-related-card h4{
+color:#111827;
+transition:.2s ease;
+}
+
+.kb-related-card:hover h4{
+color:#2563eb;
+}
+
+/* subtle hover */
+
+.kb-related-card{
+transition:
+transform .2s ease,
+border-color .2s ease,
+background .2s ease;
+}
+
+.kb-related-card:hover{
+transform:translateY(-3px);
+}
+
+
+/* article intro quote */
+
+.kb-quote{
+background:
+linear-gradient(
+135deg,
+#fffbeb,
+#fefce8
+);
+
+border-left:4px solid #facc15;
+}
+
+/* section anchor spacing */
+
+#privacy-basics,
+#browser-privacy,
+#network-privacy,
+#mobile-privacy,
+#cybersecurity,
+#advanced-topics{
+scroll-margin-top:100px;
+}
+
+/* table of contents */
+
+.kb-toc a{
+display:block;
+padding:5px 0;
+}
+
+/* ad block */
+
+.kb-ad{
+font-size:12px;
+letter-spacing:1px;
+}
+
+/* responsive */
+
+@media(max-width:768px){
+
+.kb-article h1{
+font-size:32px;
+line-height:1.2;
+}
+
+.kb-article p{
+font-size:15px;
+line-height:1.9;
+}
+
+.kb-article li{
+font-size:15px;
+}
+
+}

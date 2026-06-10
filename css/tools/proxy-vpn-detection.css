@@ -1,0 +1,571 @@
+
+/* PREVENT HEADER OVERRIDES */
+header,
+header *,
+.site-header,
+.site-header *{
+  font-family:inherit !important;
+  line-height:normal !important;
+  letter-spacing:normal !important;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  background:#f4f7fb;
+  color:#0f172a;
+}
+
+
+
+
+
+/* ==========================================================================
+   TRUST UPGRADES: TELEMETRY GRID & COMPLIANCE FOOTER
+   ========================================================================== */
+
+/* The Telemetry Data Grid */
+.telemetry-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.telemetry-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.t-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.t-value {
+    font-size: 0.95rem;
+    color: #0f172a;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+/* Engine Compliance Footer */
+.engine-compliance {
+    margin-top: 40px;
+    padding: 24px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.compliance-title {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.compliance-dot {
+    width: 6px;
+    height: 6px;
+    background: #3b82f6;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+
+.compliance-text {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.compliance-text strong {
+    color: #334155;
+}
+
+.compliance-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+/* ==========================================================================
+   MODERN HERO TITLE STYLING
+   ========================================================================== */
+
+.vpn-title-container {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    padding: 0 16px;
+}
+
+.vpn-main-title {
+    /* Responsive font sizing: scales perfectly from mobile to desktop */
+    font-size: clamp(2.25rem, 5vw, 3rem);
+    font-weight: 800;
+    
+    /* Modern compressed tracking for heavy headlines */
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    
+    /* Premium deep-slate color gradient */
+    background: linear-gradient(135deg, #0f172a 30%, #1e293b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Optional: Subtle theme accent bar underneath the text for depth */
+.vpn-title-container::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    background: #3b82f6; /* Matches your active blue accent color */
+    border-radius: 100px;
+    margin: 16px auto 0 auto;
+    opacity: 0.8;
+}
+/* ==========================================================================
+   MODERN TRUST BADGE
+   ========================================================================== */
+
+.tech-stack-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.tech-stack-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    
+    /* Modern semi-transparent glass effect */
+    background: rgba(59, 130, 246, 0.05); 
+    border: 1px solid rgba(59, 130, 246, 0.15); 
+    border-radius: 100px; /* Creates the sleek pill shape */
+    
+    transition: all 0.3s ease;
+}
+
+.tech-stack-badge:hover {
+    background: rgba(59, 130, 246, 0.08);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    transform: translateY(-1px);
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #3b82f6;
+    border-radius: 50%;
+    
+    /* The glowing animation */
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+    animation: pulse-ring 2.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.badge-text {
+    font-size: 0.75rem;
+    color: #475569;
+    letter-spacing: 0.02em;
+}
+
+.badge-text strong {
+    color: #1e293b;
+    font-weight: 700;
+}
+
+/* Keyframes for the breathing dot animation */
+@keyframes pulse-ring {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.5);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(59, 130, 246, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    }
+}
+
+
+
+
+
+
+
+
+.vpn-page,
+.faq-section{
+  font-family:Inter,sans-serif;
+}
+
+/* PAGE */
+.vpn-page{
+  max-width:800px;
+  margin:58px auto;
+  padding:0 22px;
+}
+
+/* MAIN CARD */
+.vpn-card{
+  background:#ffffff;
+
+  border:1px solid #dbe3ee;
+
+  border-radius:24px;
+width: 100%;
+    max-width: 768px;      /* Restricts the card from stretching too wide */
+    margin-left: auto;     /* Centers the card horizontally */
+    margin-right: auto;
+  padding:34px;
+
+  box-shadow:
+    0 1px 2px rgba(15,23,42,.03),
+    0 12px 32px rgba(15,23,42,.06);
+
+  position:relative;
+  margin-top: 18px;
+}
+
+/* TOP */
+.vpn-card-top{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.card-mini-label{
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.08em;
+  color:#64748b;
+  margin-bottom:18px;
+}
+
+/* TOP SIGNAL */
+.top-indicator{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  flex-shrink:0;
+  margin-top:6px;
+}
+
+.top-indicator.safe{
+  background:#22c55e;
+  box-shadow:0 0 10px rgba(34,197,94,.35);
+}
+
+.top-indicator.danger{
+  background:#ef4444;
+  box-shadow:0 0 10px rgba(239,68,68,.35);
+}
+
+/* IP ROW */
+.real-ip-row{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.real-ip{
+  font-size:18px;
+  font-weight:700;
+  color:#0f172a;
+  word-break:break-word;
+  line-height:1.7;
+}
+
+/* COPY BUTTON */
+#copy-btn{
+  border:none;
+  background:#2563eb;
+  color:#fff;
+  height:42px;
+  padding:0 18px;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:13px;
+  font-weight:700;
+  transition:.2s ease;
+}
+
+#copy-btn:hover{
+  background:#1d4ed8;
+}
+
+/* DIVIDER */
+.vpn-divider{
+  height:1px;
+  background:#e5e7eb;
+  margin:28px 0;
+}
+
+/* HEADER */
+.detector-header h1{
+  font-size:38px;
+  font-weight:800;
+  color:#0f172a;
+  margin-bottom:12px;
+  line-height:1.2;
+}
+
+.detector-header p{
+  font-size:15px;
+  line-height:1.8;
+  color:#64748b;
+  max-width:700px;
+}
+
+/* FORM */
+.detect-form{
+  display:flex;
+  gap:12px;
+  margin-top:28px;
+}
+
+.detect-form input{
+  flex:1;
+  height:54px;
+  border-radius:14px;
+  border:1px solid #dbe2ea;
+  padding:0 18px;
+  font-size:14px;
+  outline:none;
+  background:#fff;
+  transition:.2s ease;
+}
+
+.detect-form input:focus{
+  border-color:#2563eb;
+  box-shadow:0 0 0 4px rgba(37,99,235,.08);
+}
+
+.detect-form button{
+  border:none;
+  background:#0f172a;
+  color:#fff;
+  height:54px;
+  padding:0 24px;
+  border-radius:14px;
+  cursor:pointer;
+  font-size:13px;
+  font-weight:700;
+  transition:.2s ease;
+}
+
+.detect-form button:hover{
+  background:#111827;
+}
+
+/* INLINE RESULT */
+.inline-result{
+  margin-top:20px;
+}
+
+.hidden{
+  display:none;
+}
+
+/* RESULT SIGNAL */
+.result-signal{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:18px;
+  border-radius:18px;
+}
+
+.result-signal.safe{
+  background:#f0fdf4;
+  border:1px solid #bbf7d0;
+}
+
+.result-signal.danger{
+  background:#fef2f2;
+  border:1px solid #fecaca;
+}
+
+/* ICON */
+.signal-image-wrap{
+  width:52px;
+  height:52px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+.result-signal.safe .signal-image-wrap{
+  background:#dcfce7;
+}
+
+.result-signal.danger .signal-image-wrap{
+  background:#fee2e2;
+}
+
+.signal-image{
+  width:26px;
+  height:26px;
+  object-fit:contain;
+}
+
+/* TEXT */
+.signal-title{
+  font-size:20px;
+  font-weight:800;
+  color:#0f172a;
+  margin-bottom:4px;
+}
+
+.signal-subtitle{
+  font-size:14px;
+  line-height:1.7;
+  color:#64748b;
+}
+
+
+
+
+
+/* HERO */
+.vpn-hero{
+  max-width:980px;
+  margin:0 auto 34px;
+  
+  text-align:center;
+}
+
+.hero-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:8px 16px;
+
+  background:#eef2ff;
+
+  border:1px solid #dbeafe;
+
+  border-radius:999px;
+
+  color:#2563eb;
+
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.08em;
+ margin-top: 8px;
+  margin-bottom:2px;
+}
+
+.vpn-hero h1{
+  font-size:38px;
+  font-weight:800;
+  line-height:1.08;
+
+  color:#071133;
+
+  max-width:980px;
+ 
+}
+
+.vpn-hero p{
+  max-width:760px;
+
+  margin:auto;
+
+  font-size:19px;
+  line-height:1.9;
+
+  color:#64748b;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+  .vpn-hero h1{
+    font-size:38px;
+    line-height:1.18;
+  }
+
+  .vpn-hero p{
+    font-size:16px;
+  }
+
+}
+
+
+
+
+
+
+.vpn-hero {
+    padding-top: 8px;
+    padding-bottom: 18px;
+}
+
+.vpn-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.vpn-badge {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.vpn-info-box {
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-left: 4px solid #facc15;
+    background: rgba(250, 204, 21, 0.08);
+    border-radius: 8px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.vpn-education-box {
+    margin-top: 34px;
+}
+
+
+.vpn-education-box h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}

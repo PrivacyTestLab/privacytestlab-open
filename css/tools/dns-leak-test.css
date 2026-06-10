@@ -1,0 +1,657 @@
+/* =========================================
+   SAFE CSS
+   DOES NOT MODIFY HEADER / FOOTER
+========================================= */
+
+header,
+header *,
+nav,
+nav *,
+footer,
+footer *{
+font-family:inherit !important;
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+*{
+box-sizing:border-box;
+}
+
+html,
+body{
+margin:0;
+padding:0;
+}
+
+body{
+background:#f4f7fb;
+color:#0f172a;
+}
+
+
+
+
+
+
+
+
+.dns-page{
+max-width:920px;
+margin:18px auto 52px;
+padding:0 22px;
+}
+
+
+/* =========================================
+   SMALL PAGE TITLE
+========================================= */
+
+.dns-mini-heading{
+font-size:34px;
+font-weight:800;
+line-height:1.2;
+letter-spacing:-.6px;
+color:#0f172a;
+margin-bottom: 2pxs;
+text-align:center;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.dns-card{
+position:relative;
+
+background: #131822; /* Slightly deeper obsidian slate */
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Technical micro-border */
+    border-radius: 16px; /* Crisper, sharper corporate corners */
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+overflow:hidden;
+margin-top: 10px;
+color: #ffffff;
+}
+
+
+/* =========================================
+   TOP SECTION
+========================================= */
+
+.dns-card-top{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+gap:18px;
+}
+
+.card-mini-label{
+font-size:11px;
+font-weight:800;
+letter-spacing:.09em;
+color:#e2e8f0;
+margin-bottom:16px;
+}
+
+.public-ip-row{
+display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-top: 4px;
+flex-wrap:wrap;
+}
+
+.public-ip{
+font-size: 3.5rem;
+    font-weight: 800;
+line-height:1;
+letter-spacing: -0.03em;
+    font-feature-settings: "tnum";
+color:#ffffff;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+#copy-ip-btn {
+    background: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#copy-ip-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Master Primary Trigger Layout */
+#run-test-btn {
+    background: #3b46fc;
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 8px; /* Sharper profile consistency */
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#run-test-btn:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================
+   STATUS DOT
+========================================= */
+
+.top-indicator{
+width:16px;
+height:16px;
+border-radius:50%;
+flex-shrink:0;
+margin-top:6px;
+}
+
+.top-indicator.safe{
+background:#7ee081;
+box-shadow:0 0 18px rgba(126,224,129,.45);
+}
+
+.top-indicator.danger{
+background:#ef4444;
+box-shadow:0 0 18px rgba(239,68,68,.45);
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.dns-divider{
+height:1px;
+
+background:
+linear-gradient(
+to right,
+transparent,
+rgba(255,255,255,.12),
+transparent
+);
+
+margin:28px 0 30px;
+}
+
+
+/* =========================================
+   ACTION AREA
+========================================= */
+
+.dns-action{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+}
+
+.test-hint{
+margin-top:16px;
+font-size:15px;
+line-height:1.8;
+color:#e2e8f0;
+}
+
+
+/* =========================================
+   RESULTS
+========================================= */
+
+.dns-results{
+margin-top:30px;
+}
+
+.hidden{
+display:none;
+}
+
+
+/* =========================================
+   STATUS BOX
+========================================= */
+
+.dns-status{
+display:flex;
+align-items:center;
+gap:18px;
+
+padding:20px;
+
+border-radius: 10px;
+
+margin-bottom:28px;
+}
+
+.dns-status.safe{
+background:#f0fdf4;
+border:1px solid #bbf7d0;
+}
+
+.dns-status.danger{
+background:#fef2f2;
+border:1px solid #fecaca;
+}
+
+.status-icon-wrap{
+width:60px;
+height:60px;
+
+border-radius:18px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+flex-shrink:0;
+}
+
+.dns-status.safe .status-icon-wrap{
+background:#dcfce7;
+}
+
+.dns-status.danger .status-icon-wrap{
+background:#fee2e2;
+}
+
+.status-icon-wrap img{
+width:30px;
+height:30px;
+object-fit:contain;
+}
+
+.status-title{
+font-size:22px;
+font-weight:800;
+color:#071133;
+margin-bottom:4px;
+}
+
+.status-subtitle{
+font-size:14px;
+line-height:1.8;
+color:#64748b;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.dns-table-wrap{
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:22px;
+
+overflow:hidden;
+}
+
+.dns-table{
+width:100%;
+border-collapse:collapse;
+min-width:680px;
+}
+
+.dns-table thead{
+background:rgba(255,255,255,.04);
+}
+
+.dns-table th{
+text-align:left;
+
+padding:18px 20px;
+
+font-size:13px;
+font-weight:700;
+
+color:#bfdbfe;
+
+border-bottom:
+1px solid rgba(255,255,255,.08);
+}
+
+.dns-table td{
+padding:18px 20px;
+
+font-size:15px;
+
+color:#ffffff;
+
+border-bottom:
+1px solid rgba(255,255,255,.05);
+}
+
+.dns-table tbody tr:hover{
+background:rgba(255,255,255,.03);
+}
+
+
+/* =========================================
+   PRIVACY NOTE
+========================================= */
+
+.seo-note-box{
+margin-top:22px;
+
+padding:16px 18px;
+
+border-radius:16px;
+
+background:#f5f1e3;
+
+border:1px solid #e3d7aa;
+
+line-height:1.9;
+
+color:#5c4b1f;
+
+font-size:15px;
+}
+
+
+/* ==========================================================================
+   SYSTEM ASSURANCE TRUST COMPONENT STYLES
+   ========================================================================== */
+
+.dns-assurance-container {
+    margin-top: 24px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Subtle Hover Shift to emphasize app premium feel */
+.dns-assurance-container:hover {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.06);
+}
+
+.assurance-header-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+/* Cybernetic Status Indicator Ring */
+.assurance-pulse-node {
+    width: 6px;
+    height: 6px;
+    background: #3b82f6; /* Trust blue signature node */
+    border-radius: 50%;
+    box-shadow: 0 0 8px #3b82f6;
+    position: relative;
+}
+
+.assurance-meta-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #94a3b8;
+}
+
+.assurance-paragraph {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin: 0 0 18px 0;
+}
+
+/* Dynamic Text Highlights */
+.text-accent-blue {
+    color: #60a5fa;
+    font-family: monospace;
+    background: rgba(59, 130, 246, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.text-accent-glow {
+    color: #f8fafc;
+    font-weight: 600;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+/* Micro Metric Framework Pills */
+.assurance-grid-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.metric-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background 0.2s ease;
+}
+
+.metric-pill:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.pill-icon {
+    font-size: 0.9rem;
+}
+
+.pill-text {
+    font-size: 0.775rem;
+    font-weight: 600;
+    color: #94a3b8;
+    letter-spacing: 0.01em;
+}
+
+/* Mobile Alignment Optimization */
+@media (max-width: 640px) {
+    .dns-assurance-container {
+        padding: 18px;
+        margin-top: 18px;
+    }
+    
+    .assurance-grid-metrics {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .metric-pill {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:900px){
+
+.dns-page{
+margin:14px auto 46px;
+}
+
+.dns-mini-heading{
+font-size:22px;
+}
+
+.dns-card{
+padding:22px;
+border-radius:24px;
+}
+
+.public-ip{
+font-size:30px;
+}
+
+#run-test-btn{
+width:100%;
+}
+
+.faq-question{
+font-size:22px;
+}
+
+.faq-answer{
+font-size:16px;
+}
+
+}
+
+@media(max-width:640px){
+
+.dns-page{
+padding:0 16px;
+}
+
+.dns-mini-heading{
+font-size:20px;
+margin-bottom:14px;
+}
+
+.dns-card{
+padding:18px;
+border-radius:22px;
+}
+
+.public-ip{
+font-size:24px;
+}
+
+#copy-ip-btn{
+width:100%;
+
+}
+
+.public-ip-row{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.faq-section{
+padding:0 18px;
+margin:42px auto 60px;
+}
+
+.faq-container h2{
+font-size:30px;
+}
+
+.faq-question{
+font-size:21px;
+}
+
+}
+@media(max-width:640px){
+
+    /* ... Keep your existing mobile styles here ... */
+
+    /* Force the table elements to behave like block divs */
+    .dns-table, 
+    .dns-table thead, 
+    .dns-table tbody, 
+    .dns-table th, 
+    .dns-table td, 
+    .dns-table tr { 
+        display: block; 
+    }
+    
+    /* Hide the table headers completely (they get confusing when stacked) */
+    .dns-table thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    /* Style each row box like an isolated log item */
+    .dns-table tr { 
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 12px;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    
+    /* Style the individual data fields */
+    .dns-table td { 
+        border: none;
+        padding: 6px 8px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column; /* Stacks data under descriptive labels if needed */
+    }
+
+    /* Optional: Add clear text labels before the data using pseudo-elements */
+    .dns-table td:nth-of-type(1)::before { content: "Server IP:"; font-size: 11px; color: #64748b; text-transform: uppercase; font-weight: bold; }
+    .dns-table td:nth-of-type(2)::before { content: "ISP / Organization:"; font-size: 11px; color: #64748b; text-transform: uppercase; font-weight: bold; }
+    .dns-table td:nth-of-type(3)::before { content: "Location:"; font-size: 11px; color: #64748b; text-transform: uppercase; font-weight: bold; }
+}
+
+
+
+@media(max-width:768px){
+
+.footer-accordion-btn{
+cursor:pointer;
+}
+
+.footer-accordion-btn i{
+opacity:1;
+visibility:visible;
+pointer-events:auto;
+transition:.3s ease;
+}
+
+.footer-accordion-content{
+max-height:0;
+overflow:hidden;
+transition:max-height .3s ease;
+}
+
+.footer-accordion.active .footer-accordion-content{
+max-height:500px;
+}
+
+.footer-accordion.active .footer-accordion-btn i{
+transform:rotate(180deg);
+}
+
+}

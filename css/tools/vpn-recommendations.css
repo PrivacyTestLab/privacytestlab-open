@@ -1,0 +1,79 @@
+.vpn-page {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.vpn-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.vpn-hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.vpn-hero p {
+  font-size: 18px;
+  color: #374151;
+  line-height: 1.8;
+}
+
+.vpn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.vpn-card {
+  display: flex;
+  gap: 40px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.06);
+  align-items: center;
+}
+
+.vpn-card img {
+  width: 140px;
+}
+
+.vpn-info h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.vpn-price {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.vpn-info ul {
+  margin-bottom: 25px;
+  padding-left: 18px;
+}
+
+.vpn-info li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.vpn-cta {
+  display: inline-block;
+  background: #111827;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .2s ease;
+}
+
+.vpn-cta:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
